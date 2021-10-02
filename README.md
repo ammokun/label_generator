@@ -1,4 +1,4 @@
-# label_gnerator
+# label_generator
 
 大昔に書いたラベル生成コードを手直ししてみた．地学サークルの標本展示，ご自宅の化石標本整理にどうぞ．
 ![fig](https://github.com/ammokun/label_generator/blob/master/figure1.png)
