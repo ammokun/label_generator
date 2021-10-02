@@ -134,6 +134,7 @@ def add_lavel(x,y,number):
         #p.font.bold = True
         roman.font.roman = True
         roman.font.bold = True
+        roman.font.name = "Times New Roman"
 
     elif hyohon_list[number]['scientific_name_roman'] is None:
         p = tf.add_paragraph()
@@ -143,12 +144,14 @@ def add_lavel(x,y,number):
         #p.font.bold = True
         genes.font.italic = True
         genes.font.bold = True
+        genes.font.name = "Times New Roman"
 
         species = p.add_run()
         species.text = hyohon_list[number]['scientific_name_species']
         #p.font.bold = True
         species.font.italic = True
         species.font.bold = True
+        species.font.name = "Times New Roman"
 
     elif hyohon_list[number]['scientific_name_species'] is None: 
         p = tf.add_paragraph()
@@ -158,12 +161,13 @@ def add_lavel(x,y,number):
         #p.font.bold = True
         genes.font.italic = True
         genes.font.bold = True
-
+        genes.font.name = "Times New Roman"
         roman = p.add_run()
         roman.text = hyohon_list[number]['scientific_name_roman']
         #p.font.bold = True
         roman.font.roman = True
         roman.font.bold = True
+        roman.font.name = "Times New Roman"
 
     else :
         p = tf.add_paragraph()
@@ -172,18 +176,21 @@ def add_lavel(x,y,number):
         #p.font.bold = True
         genes.font.italic = True
         genes.font.bold = True
-        
+        genes.font.name = "Times New Roman"
+
         roman = p.add_run()
         roman.text = hyohon_list[number]['scientific_name_roman']+" "
         #p.font.bold = True
         roman.font.roman = True
         roman.font.bold = True
+        roman.font.name = "Times New Roman"
 
         species = p.add_run()
         species.text = hyohon_list[number]['scientific_name_species']
         #p.font.bold = True
         species.font.italic = True
         species.font.bold = True
+        species.font.name = "Times New Roman"
 
     p = tf.add_paragraph()
     p.text = if_nonetype(hyohon_list[number]['japanese_name'])
