@@ -38,7 +38,7 @@ sheet=wb['Sheet1']
 hyohon_list=[]
 
 print('Reading...\n')
-for row in range(1,sheet.max_row):
+for row in range(1,sheet.max_row+1):
 	
 
 	hyohon={
@@ -61,7 +61,6 @@ for row in range(1,sheet.max_row):
 	}
 
 	hyohon_list.append(hyohon)
-
 max=len(hyohon_list)
 print('Excel file has been successfully read! max=',max)
 prs = Presentation()
